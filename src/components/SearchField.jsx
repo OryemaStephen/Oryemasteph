@@ -1,21 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FaSearch } from 'react-icons/fa';
 
 const SearchField = ({ placeholder, type = 'text', value, onSearchChange }) => {
   const [error, setError] = useState('');
-
-  // const handleChange = (e) => {
-  //   const inputValue = e.target.value;
-
-  //   // Basic validation logic
-  //   if (validate) {
-  //     const validationError = validate(inputValue);
-  //     setError(validationError);
-  //   }
-
-  //   onChange(e);
-  // };
 
   return (
     <div className="relative w-64 lg:w-80">

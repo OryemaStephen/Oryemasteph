@@ -7,7 +7,7 @@ const PageTitle = ({ text, onSearchChange, image, showSearch = true }) => {
   return (
     <div className="flex items-center pt-2 justify-between w-full px-4 bg-white pb-2 border border-b-slate-300 h-fit">
       <div className="block w-full md:flex md:items-center md:justify-between lg:w-1/2">
-        <div className="font-bold pl-2 md:pl-0 uppercase md:hidden">OS</div>
+        <div className="font-bold pl-2 md:pl-0 text-2xl uppercase md:hidden">OS</div>
         <div className="font-bold hidden md:block pl-2 md:pl-0 uppercase">{text}</div>
         {showSearch && (
           <SearchField

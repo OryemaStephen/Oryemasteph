@@ -33,9 +33,9 @@ const Sidebar = () => {
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } md:translate-x-0 md:relative md:block`}
       >
-        <div className="flex flex-col p-4">
-          <Link to="/" className="flex items-center text-4xl ">
-            OS
+        <div className="flex items-center justify-center flex-col">
+          <Link to="/" className="flex items-center">
+            <span className='text-2xl text-center'>OS</span>
           </Link>
         </div>
         <nav className="flex flex-col gap-1 p-4">
