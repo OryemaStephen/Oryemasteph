@@ -14,14 +14,14 @@ const Sidebar = () => {
 
   const handleLinkClick = (path) => {
     setActiveLink(path);
-    setIsOpen(false); // Optionally close the sidebar on link click
+    setIsOpen(false); 
   };
 
   return (
     <div className="z-10 h-screen md:w-64">
       <div className="relative w-full">
         <button
-          className={`absolute z-50 text-xl rounded-full bg-transparent ${isOpen ? 'text-white top-6 left-[150px]' : 'top-3 left-0 text-slate-700'} md:hidden`}
+          className={`absolute z-50 text-xl rounded-full bg-transparent ${isOpen ? 'text-slate-700 top-4 left-[90vw]' : 'top-3 left-[90vw] text-slate-700'} md:hidden`}
           onClick={toggleSidebar}
         >
           {isOpen ? <FaTimes /> : <FaBars />}

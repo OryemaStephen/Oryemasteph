@@ -1,6 +1,7 @@
 import PageTitle from '../components/PageTitle';
-import profile from '../assets/profile.png';
+import profile from '../assets/profile.jpg';
 import Footer from '../components/Footer';
+import Home from '../components/Home'
 
 const Dashboard = () => {
   return (
@@ -8,8 +9,8 @@ const Dashboard = () => {
       <div className="w-full h-full text-black bg-white">
         <PageTitle text="Home" showSearch={false} image={profile} />
       </div>
-      <div className="w-full h-full bg-center bg-cover">
-        Home
+      <div className="w-full text-black px-3">
+        <Home />
       </div>
       <div className="bottom-0 w-full md:fixed">
         <Footer />

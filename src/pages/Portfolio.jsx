@@ -1,6 +1,6 @@
 import Footer from "../components/Footer"
 import PageTitle from "../components/PageTitle"
-import profile from '../assets/profile.png';
+import profile from '../assets/profile.jpg';
 
 const Portfolio = () => {
   return (
