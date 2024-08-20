@@ -1,11 +1,12 @@
-// import React from 'react'
+// import React from 'react';
+import AppRoutes from './router/AppRoutes';
 
 const App = () => {
   return (
-    <div>
-      <h2 className="text-5xl">Stephen</h2>
+    <div className="flex w-full h-full">
+      <AppRoutes />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
