@@ -1,4 +1,3 @@
-// import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useProjects } from '../contexts/ProjectContext';
 
@@ -12,9 +11,9 @@ const Projects = () => {
 
     return (
         <div className="grid w-full h-full grid-cols-1 gap-4 bg-white sm:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project, index) => (
+            {projects.map((project) => (
                 <div
-                    key={index}
+                    key={project.id}
                     className="relative grid-cols-1 overflow-hidden transition-shadow duration-300 border border-gray-300 rounded-lg shadow-lg max-h-80 min-h-72 group hover:shadow-2xl"
                 >
                     <img
