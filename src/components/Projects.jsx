@@ -11,19 +11,19 @@ const Projects = () => {
     };
 
   return (
-    <div className="w-full h-full gap-2 bg-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid w-full h-full grid-cols-1 gap-2 bg-white sm:grid-cols-2 lg:grid-cols-3">
       {projects.map((project, index) => (
-        <div key={index} className="relative group rounded-lg overflow-hidden grid-cols-1">
+        <div key={index} className="relative grid-cols-1 overflow-hidden rounded-lg max-h-80 min-h-72 group">
           <img
             src={project.src}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="object-cover object-center w-full h-full"
           />
-          <div className="absolute inset-0 bg-black bg-opacity-90 flex items-center text-white flex-col justify-center transition-transform duration-500 transform translate-y-full group-hover:translate-y-0">
-            <h2 className="text-white text-2xl md:text-3xl text-center pb-2">
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-white transition-transform duration-500 transform translate-y-full bg-black bg-opacity-90 group-hover:translate-y-0">
+            <h2 className="pb-2 text-2xl text-center text-white md:text-3xl">
               {project.title}
             </h2>
-            <p className="text-lg text-center pb-2">{project.paragraph}</p>
+            <p className="pb-2 text-lg text-center">{project.paragraph}</p>
             <button
               type="button"
               className="px-5 cursor-pointer py-2 border-[1px] border-white bg-white text-black hover:bg-gray-800 hover:border-black hover:text-white transition-colors duration-500 ease-in-out"

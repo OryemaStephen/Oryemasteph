@@ -1,6 +1,7 @@
 import profile from '../assets/profile.jpg';
 import PageTitle from '../components/PageTitle';
 import Footer from '../components/Footer';
+import Socials from '../components/Socials';
 
 const Skills = () => {
   return (
@@ -15,7 +16,10 @@ const Skills = () => {
       <div>
       Skills
       </div>
-      <div className="bottom-0 w-full md:fixed">
+      <div className='bg-slate-800'>
+        <Socials /> 
+      </div>
+      <div className="w-full">
         <Footer />
       </div>
     </div>

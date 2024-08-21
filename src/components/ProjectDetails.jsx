@@ -19,38 +19,44 @@ const ProjectDetails = () => {
       <div className="w-full h-full">
         <PageTitle text="Portfolio" image={profile} showSearch={false} />
       </div>
-      <div className="px-3 w-full h-full">
+      <div className="w-full h-full px-3">
         <Link to='/portfolio' className='cursor-pointer'>
-          <div className='w-1/2 flex justify-start items-center cursor-pointer'>
+          <div className='flex items-center justify-start w-1/2 cursor-pointer'>
             <div className='cursor-pointer'><IoMdArrowRoundBack /></div>
             <div className='cursor-pointer'>Go Back</div>
           </div>
         </Link>
 
-        <div className='grid pt-10 grid-cols-1 lg:grid-cols-2 gap-5 justify-between items-start'>
+        <div className='grid items-start justify-between grid-cols-1 gap-5 pt-10 lg:grid-cols-2'>
           <div className="w-full text-center">
-            <img src={project.src} alt={project.title} className="w-full h-72 object-cover" />
+            <img src={project.src} alt={project.title} className="object-cover w-full h-72" />
           </div>
           <div className='w-full'>
-            <h1 className="text-lg uppercase font-bold pb-2">{project.title}</h1>
-            <p className="text-lg pb-2">{project.paragraph}</p>
-            <div className='w-full py-2 flex justify-center items-center'>
-              <div className='flex justify-start hover:cursor-pointer items-center w-1/2'>
+            <h1 className="pb-2 text-lg font-bold uppercase">{project.title}</h1>
+            <p className="pb-2 text-lg">{project.paragraph}</p>
+            <h3 className='pt-2 text-xl font-bold uppercase'>Skills</h3>
+            <div className='grid w-full grid-cols-3 gap-2 py-4'>
+              {project.skills.map((skill,index)=>(
+                <div key={index}  className='px-3 py-1 text-black rounded-lg bg-slate-400'>{skill}</div>
+              ))}
+            </div>
+            <div className='flex items-center justify-center w-full py-2'>
+              <div className='flex items-center justify-start w-1/2 hover:cursor-pointer'>
                 <a
                   href={project.live}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='px-3 py-1 rounded-lg cursor-pointer bg-slate-950 text-white'
+                  className='px-3 py-1 text-white rounded-lg cursor-pointer bg-slate-950'
                 >
                   <span>Live Preview</span>
                 </a>
               </div>
-              <div className='w-1/2 flex justify-start items-center'>
+              <div className='flex items-center justify-start w-1/2'>
                 <a
                   href={project.github}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='px-3 py-1 rounded-lg cursor-pointer bg-slate-950 text-white'
+                  className='px-3 py-1 text-white rounded-lg cursor-pointer bg-slate-950'
                 >
                   <span>GitHub</span>
                 </a>

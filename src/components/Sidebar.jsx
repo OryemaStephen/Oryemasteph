@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaBars, FaHome, FaSearch, FaTimes, FaUser } from 'react-icons/fa';
+import { FaBars, FaCode, FaHome, FaTimes, FaUser } from 'react-icons/fa';
 import { GrProjects } from 'react-icons/gr';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -33,7 +33,7 @@ const Sidebar = () => {
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } md:translate-x-0 md:relative md:block`}
       >
-        <div className="flex items-center justify-center flex-col">
+        <div className="flex flex-col items-center justify-center">
           <Link to="/" className="flex items-center">
             <span className='text-2xl text-center'>OS</span>
           </Link>
@@ -71,7 +71,7 @@ const Sidebar = () => {
             onClick={() => handleLinkClick('/skills')}
           >
             <span>
-              <FaSearch />
+              <FaCode />
             </span>
             <span>Skills</span>
           </Link>

@@ -6,8 +6,10 @@ import restuarant from './restaurantapp.png';
 import stephdb from './stephdb.png';
 import agrolim from './agrolim.png';
 import plutohr from './plutohr.png';
+import portfolio from './portfolio.png';
 
 export {
+  portfolio,
   barbershop,
   jobboard,
   myshop,
