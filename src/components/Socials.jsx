@@ -1,6 +1,7 @@
 // import React from 'react'
 
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaXTwitter } from "react-icons/fa6"
 
 const Socials = () => {
   return (
@@ -12,7 +13,7 @@ const Socials = () => {
         </a>
         <a href="https://x.com/Oryemasteph" target='_blank'
                     rel='noopener noreferrer' className="flex flex-col items-center justify-center my-4 text-gray-400 hover:text-green-300">
-            <div className="py-2 text-2xl md:text-4xl"><FaTwitter /></div>
+            <div className="py-2 text-2xl md:text-4xl"><FaXTwitter /></div>
             <div className="text-lg">Twitter (X)</div>
         </a>
         <a href="https://github.com/OryemaStephen" target='_blank'
