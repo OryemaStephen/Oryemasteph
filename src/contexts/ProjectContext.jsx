@@ -13,7 +13,7 @@ export const ProjectProvider = ({ children }) => {
       live: 'https://oryemasteve.netlify.app/',
       github: 'https://github.com/OryemaStephen/Oryemasteph',
       title: "Personal Portfolio",
-      paragraph: "A professional personal portfolio showcasing my skills, projects, and experience as a fullstack web developer. Built with React and styled with Tailwind CSS, it features a responsive design and modern UI.",
+      paragraph: "A professional personal portfolio showcasing my skills, projects, and experience as a fullstack web developer.",
       skills: ['React', 'Tailwind CSS']
     },
     { 
