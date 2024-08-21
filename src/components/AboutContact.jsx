@@ -1,6 +1,5 @@
 // import React from 'react'
 import { useState } from "react";
-import PropTypes from 'prop-types';
 import emailjs from 'emailjs-com';
 
 const AboutContact = () => {
@@ -100,10 +99,5 @@ const AboutContact = () => {
       </div>
   )
 }
-
-AboutContact.propTypes = {
-    isOpen: PropTypes.bool.isRequired,
-    onClose: PropTypes.func.isRequired,
-  };
 
 export default AboutContact

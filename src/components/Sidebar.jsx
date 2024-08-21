@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { FaBars, FaCode, FaHome, FaTimes, FaUser } from 'react-icons/fa';
+import { FaBars, FaHome, FaTimes, FaUser } from 'react-icons/fa';
+import { FaBarsStaggered } from 'react-icons/fa6';
 import { GrProjects } from 'react-icons/gr';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -18,10 +19,12 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="z-10 h-screen md:w-64">
-      <div className="relative w-full">
+    <div className="fixed top-0 left-0 z-10 h-full text-white bg-gray-800 md:w-44">
+      <div className="relative">
         <button
-          className={`absolute z-50 text-xl rounded-full bg-transparent ${isOpen ? 'text-slate-700 top-4 left-[90vw]' : 'top-3 left-[90vw] text-slate-700'} md:hidden`}
+          className={`absolute z-50 text-xl rounded-full bg-transparent ${
+            isOpen ? 'text-white top-6 left-32' : 'top-4 left-72 text-slate-700'
+          } md:hidden`}
           onClick={toggleSidebar}
         >
           {isOpen ? <FaTimes /> : <FaBars />}
@@ -33,9 +36,9 @@ const Sidebar = () => {
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } md:translate-x-0 md:relative md:block`}
       >
-        <div className="flex flex-col items-center justify-center">
-          <Link to="/" className="flex items-center">
-            <span className='text-2xl text-center'>OS</span>
+        <div className="flex flex-col items-center justify-center py-4">
+          <Link to="/" className="text-3xl">
+            OS
           </Link>
         </div>
         <nav className="flex flex-col gap-1 p-4">
@@ -46,9 +49,7 @@ const Sidebar = () => {
             }`}
             onClick={() => handleLinkClick('/')}
           >
-            <span>
-              <FaHome />
-            </span>
+            <FaHome />
             <span>Home</span>
           </Link>
           <Link
@@ -58,9 +59,7 @@ const Sidebar = () => {
             }`}
             onClick={() => handleLinkClick('/portfolio')}
           >
-            <span>
-              <GrProjects />
-            </span>
+            <GrProjects />
             <span>Portfolio</span>
           </Link>
           <Link
@@ -70,9 +69,7 @@ const Sidebar = () => {
             }`}
             onClick={() => handleLinkClick('/skills')}
           >
-            <span>
-              <FaCode />
-            </span>
+            <FaBarsStaggered />
             <span>Skills</span>
           </Link>
           <Link
@@ -82,9 +79,7 @@ const Sidebar = () => {
             }`}
             onClick={() => handleLinkClick('/about')}
           >
-            <span>
-              <FaUser />
-            </span>
+            <FaUser />
             <span>About</span>
           </Link>
         </nav>

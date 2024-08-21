@@ -11,9 +11,9 @@ const AppRoutes = () => {
   return (
     <ProjectProvider>
       <Router>
-        <div className="flex w-full min-h-screen">
+        <div className="flex">
           <Sidebar />
-          <div className="flex-grow overflow-y-auto">
+          <div className="flex-grow overflow-y-auto md:ml-44">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/portfolio" element={<Portfolio />} />

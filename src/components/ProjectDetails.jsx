@@ -7,7 +7,7 @@ import { IoMdArrowRoundBack } from 'react-icons/io';
 
 const ProjectDetails = () => {
   const { id } = useParams();
-  const projects = useProjects();
+  const {projects} = useProjects();
   const project = projects.find((proj) => proj.id === parseInt(id));
 
   if (!project) {

@@ -9,7 +9,7 @@ const Home = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
   
     useEffect(() => {
-      const words = ['Frontend Developer']; 
+      const words = ['Web Developer!']; 
   
       let typingTimeout;
       const handleTyping = () => {
@@ -22,11 +22,11 @@ const Home = () => {
   
         if (!isDeleting && updatedText === currentWord) {
           setIsDeleting(true);
-          setTypingSpeed(100);
+          setTypingSpeed(200);
         } else if (isDeleting && updatedText === '') {
           setIsDeleting(false);
           setLoopNum(loopNum + 1);
-          setTypingSpeed(150);
+          setTypingSpeed(200);
         }
   
         typingTimeout = setTimeout(handleTyping, typingSpeed);
@@ -42,9 +42,9 @@ const Home = () => {
   
     return (
       <div className="w-full h-full">
-        <div className="text-center w-full px-1 md:w-4/5 mx-auto">
-          <h2 className="text-2xl font-bold pt-2">Hello, I am</h2>
-          <h2 className="text-xl font-bold py-5 uppercase">Oryema Stephen</h2>
+        <div className="w-full px-1 mx-auto text-center md:w-4/5">
+          <h2 className="pt-2 text-2xl font-bold">Hello, I am</h2>
+          <h2 className="py-5 text-xl font-bold uppercase">Oryema Stephen</h2>
           <h2 className="text-xl font-bold text-zinc-700" style={{ minHeight: '30px' }}>{text || '\u00A0'}</h2>
           <p className="text-lg">
             Building and Maintaining responsive websites.
@@ -53,10 +53,10 @@ const Home = () => {
             Making the web more beautiful, one pixel at a time.
           </p>
         </div>
-        <div className='w-full gap-3 flex py-5 items-center justify-center'>
-          <button onClick={openModal} className='px-5 pt-1 pb-2 bg-gray-800 text-white hover:text-black hover:bg-gray-400 rounded-lg'>Hire Me</button>
+        <div className='flex items-center justify-center w-full gap-3 py-5'>
+          <button onClick={openModal} className='px-2 pt-1 pb-2 text-white bg-gray-800 rounded-lg sm:px-5 hover:text-black hover:bg-gray-400'>Hire Me</button>
           <a href='https://drive.google.com/file/d/18nJWPLEpmGJo6BcbxDOWxJzpAPAjzhgw/view?usp=sharing' target='_blank'
-                    rel='noopener noreferrer' className='px-5 pt-1 pb-2 bg-gray-800 text-white hover:text-black hover:bg-gray-400 rounded-lg'>Download My Resume</a>
+                    rel='noopener noreferrer' className='px-2 pt-1 pb-2 text-white bg-gray-800 rounded-lg sm:px-5 hover:text-black hover:bg-gray-400'>Download My Resume</a>
         </div>
         <Modal isOpen={isModalOpen} onClose={closeModal} />
       </div>

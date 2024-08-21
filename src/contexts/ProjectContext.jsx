@@ -1,6 +1,6 @@
 // src/contexts/ProjectContext.js
 import { createContext, useContext, useState } from 'react';
-import PropTypes from 'prop-types'; // Import PropTypes
+import PropTypes from 'prop-types'; 
 import { portfolio, barbershop, jobboard, myshop, rentcar, restuarant, stephdb, agrolim, plutohr } from '../assets/projectImages';
 
 const ProjectContext = createContext();
@@ -90,8 +90,12 @@ export const ProjectProvider = ({ children }) => {
     }
   ]);
 
+  const [skills] = useState([
+    'ReactJS', 'TailwindCSS', 'Bootstrap', 'JavaScript', 'CSS', 'HTML5', 'NodeJS', 'ExpressJS', 'MySQL'
+  ]);
+
   return (
-    <ProjectContext.Provider value={projects}>
+    <ProjectContext.Provider value={{projects, skills}}>
       {children}
     </ProjectContext.Provider>
   );
