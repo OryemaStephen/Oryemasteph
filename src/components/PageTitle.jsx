@@ -36,7 +36,7 @@ PageTitle.propTypes = {
   text: PropTypes.string,
   image: PropTypes.string,
   showSearch: PropTypes.bool,
-  onSearchChange: PropTypes.func.isRequired,
+  onSearchChange: PropTypes.func,
 };
 
 export default PageTitle;
