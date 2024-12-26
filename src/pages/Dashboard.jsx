@@ -1,8 +1,7 @@
-import PageTitle from '../components/PageTitle';
-import profile from '../assets/profile.jpg';
-import Footer from '../components/Footer';
-import Home from '../components/Home'
-import Socials from '../components/Socials';
+import PageTitle from "../components/PageTitle";
+import profile from "../assets/profile.jpg";
+import Home from "../components/Home";
+import Socials from "../components/Socials";
 
 const Dashboard = () => {
   return (
@@ -11,13 +10,10 @@ const Dashboard = () => {
         <PageTitle text="Home" showSearch={false} image={profile} />
       </div>
       <div className="w-full px-3 text-black">
-        <Home />       
+        <Home />
       </div>
-      <div className='bg-slate-800'>
-        <Socials /> 
-      </div>
-      <div className="w-full">
-        <Footer />
+      <div>
+        <Socials />
       </div>
     </div>
   );

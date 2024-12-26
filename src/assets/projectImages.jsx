@@ -1,12 +1,14 @@
-import barbershop from './barbershop.png';
-import jobboard from './jobboard256.png';
-import myshop from './myshop.png';
-import rentcar from './rentcars.png';
-import restuarant from './restaurantapp.png';
-import stephdb from './stephdb.png';
-import agrolim from './agrolim.png';
-import plutohr from './plutohr.png';
-import portfolio from './portfolio.png';
+import barbershop from "./barbershop.png";
+import jobboard from "./jobboard256.png";
+import myshop from "./myshop.png";
+import rentcar from "./rentcars.png";
+import restuarant from "./restaurantapp.png";
+import stephdb from "./stephdb.png";
+import agrolim from "./agrolim.png";
+import plutohr from "./plutohr.png";
+import portfolio from "./portfolio.png";
+import bantulink from "./bantulink.png";
+import publisher from "./publisher.png";
 
 export {
   portfolio,
@@ -17,5 +19,7 @@ export {
   restuarant,
   stephdb,
   agrolim,
-  plutohr
+  plutohr,
+  bantulink,
+  publisher,
 };
