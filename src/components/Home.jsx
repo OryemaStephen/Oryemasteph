@@ -43,15 +43,17 @@ const Home = () => {
   return (
     <div className="w-full h-full">
       <div className="w-full px-1 mx-auto text-center md:w-4/5">
-        <h2 className="text-2xl font-bold">Hello, I am</h2>
-        <h2 className="py-4 text-xl font-bold uppercase">Oryema Stephen</h2>
+        <h2 className="text-2xl font-bold ">Hello, I am</h2>
+        <h2 className="py-4 text-xl font-bold uppercase md:py-6">
+          Oryema Stephen
+        </h2>
         <h2
           className="text-xl font-bold text-zinc-700"
           style={{ minHeight: "30px" }}
         >
           {text || "\u00A0"}
         </h2>
-        <p className="text-lg">
+        <p className="py-0 text-lg lg:py-5">
           Building and Maintaining responsive websites. Frontend Developer with
           a bit of the backend skills. Converting figma designs into code.
           Making the web more beautiful, one pixel at a time.

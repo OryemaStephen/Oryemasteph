@@ -9,7 +9,7 @@ const Dashboard = () => {
       <div className="w-full text-black bg-white">
         <PageTitle text="Home" showSearch={false} image={profile} />
       </div>
-      <div className="flex items-center justify-center w-full px-3">
+      <div className="flex items-center justify-center w-full px-3 py-0 pt-3 lg:py-10">
         <div className="w-full text-black">
           <Home />
         </div>
