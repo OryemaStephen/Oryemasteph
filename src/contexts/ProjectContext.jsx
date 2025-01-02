@@ -22,7 +22,7 @@ export const ProjectProvider = ({ children }) => {
     {
       id: 1,
       src: bantulink,
-      live: "https://beta.bantulink.com",
+      live: "#",
       github: "https://github.com/OryemaStephen",
       title: "Bantulink Africa",
       paragraph:
@@ -121,7 +121,7 @@ export const ProjectProvider = ({ children }) => {
     {
       id: 10,
       src: plutohr,
-      live: "https://oryemasteve.netlify.app/",
+      live: "#",
       github: "https://github.com/OryemaStephen/PlutoHR",
       title: "PlutoHR",
       paragraph:
