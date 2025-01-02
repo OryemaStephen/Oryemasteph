@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <div className="w-full h-full">
       <div className="w-full px-1 mx-auto text-center md:w-4/5">
-        <h2 className="text-2xl font-bold ">Hello, I am</h2>
+        <h2 className="pt-10 text-2xl font-bold lg:pt-0 ">Hello, I am</h2>
         <h2 className="py-4 text-xl font-bold uppercase md:py-6">
           Oryema Stephen
         </h2>
