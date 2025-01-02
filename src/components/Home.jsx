@@ -43,8 +43,8 @@ const Home = () => {
   return (
     <div className="w-full h-full">
       <div className="w-full px-1 mx-auto text-center md:w-4/5">
-        <h2 className="pt-2 text-2xl font-bold">Hello, I am</h2>
-        <h2 className="py-5 text-xl font-bold uppercase">Oryema Stephen</h2>
+        <h2 className="text-2xl font-bold">Hello, I am</h2>
+        <h2 className="py-4 text-xl font-bold uppercase">Oryema Stephen</h2>
         <h2
           className="text-xl font-bold text-zinc-700"
           style={{ minHeight: "30px" }}
