@@ -22,7 +22,7 @@ export const ProjectProvider = ({ children }) => {
     {
       id: 1,
       src: bantulink,
-      live: "#",
+      live: "https://comingsoon256.netlify.app/",
       github: "https://github.com/OryemaStephen",
       title: "Bantulink Africa",
       paragraph:
@@ -42,7 +42,7 @@ export const ProjectProvider = ({ children }) => {
     {
       id: 3,
       src: portfolio,
-      live: "https://oryemasteve.netlify.app/",
+      live: "https://oryemasteph.netlify.app/",
       github: "https://github.com/OryemaStephen/Oryemasteph",
       title: "Personal Portfolio",
       paragraph:
@@ -102,7 +102,7 @@ export const ProjectProvider = ({ children }) => {
     {
       id: 9,
       src: stephdb,
-      live: "https://oryemasteve.netlify.app/",
+      live: "https://comingsoon256.netlify.app/",
       github: "https://github.com/OryemaStephen/personal-movie-database",
       title: "Personal Movie Database",
       paragraph:
@@ -121,7 +121,7 @@ export const ProjectProvider = ({ children }) => {
     {
       id: 10,
       src: plutohr,
-      live: "#",
+      live: "https://comingsoon256.netlify.app/",
       github: "https://github.com/OryemaStephen/PlutoHR",
       title: "PlutoHR",
       paragraph:
