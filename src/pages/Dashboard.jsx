@@ -5,7 +5,7 @@ import Socials from "../components/Socials";
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col w-full min-h-[90vh] text-white">
+    <div className="flex flex-col w-full lg:min-h-[90vh] min-h-[85vh] text-white">
       <div className="w-full text-black bg-white">
         <PageTitle text="Home" showSearch={false} image={profile} />
       </div>
