@@ -5,14 +5,16 @@ import Socials from "../components/Socials";
 
 const Dashboard = () => {
   return (
-    <div className="w-full space-y-4 text-white">
-      <div className="w-full h-full text-black bg-white">
+    <div className="flex flex-col w-full min-h-[90vh] text-white">
+      <div className="w-full text-black bg-white">
         <PageTitle text="Home" showSearch={false} image={profile} />
       </div>
-      <div className="w-full px-3 text-black">
-        <Home />
+      <div className="flex items-center justify-center flex-grow w-full px-3">
+        <div className="w-full text-black">
+          <Home />
+        </div>
       </div>
-      <div>
+      <div className="w-full">
         <Socials />
       </div>
     </div>

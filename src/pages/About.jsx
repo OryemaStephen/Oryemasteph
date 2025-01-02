@@ -6,16 +6,20 @@ import AboutIntro from "../components/AboutIntro";
 
 const About = () => {
   return (
-    <div>
-      <div className="w-full h-full text-black bg-white">
+    <div className="flex flex-col min-h-[90vh]">
+      <div className="w-full text-black bg-white">
         <PageTitle text="About" showSearch={false} image={profile} />
       </div>
-      <div className="items-start justify-between lg:flex">
-        <AboutIntro />
-        <AboutContact />
-      </div>
-      <div className="block bg-slate-800 md:hidden">
-        <Socials />
+      <div className="flex items-center flex-grow px-0 md:px-10">
+        <div className="w-full">
+          <div className="items-center justify-between lg:flex">
+            <AboutIntro />
+            <AboutContact />
+          </div>
+          <div className="block bg-slate-800 md:hidden">
+            <Socials />
+          </div>
+        </div>
       </div>
     </div>
   );
